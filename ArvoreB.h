@@ -27,12 +27,11 @@ public:
     bool inserir_chave(int nova_chave);
     bool remover_chave(int chave);
     void destruir_arvore();
-    // fazer uns getter básicos
     
     protected:
     pair<No*, int> busca_Arvore_B(No* raiz, int chave);
     void inserir_chave_nao_cheio(int nova_chave, No* no);
-    No* ArvoreB::criar_no_vazio();
+    No* criar_no_vazio();
     void dividir_no(No* pai, int ind);
     void remover_chave(No* pai, int chave);
     int estar_no_no(No* no, int chave);
